@@ -14,11 +14,14 @@ public class MainActivity extends AppCompatActivity {
     Button mode1;
     Button mode2;
 
+    private BackPressCloseHandler backPressCloseHandler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        backPressCloseHandler = new BackPressCloseHandler(this);
 
         mode1 = (Button) findViewById(R.id.mode1start);
         mode2 = (Button) findViewById(R.id.mode2start);
@@ -44,5 +47,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+    public void onBackPressed() {
+        //super.onBackPressed();
+        backPressCloseHandler.onBackPressed();
     }
 }

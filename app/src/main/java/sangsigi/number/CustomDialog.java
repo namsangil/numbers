@@ -31,6 +31,11 @@ public class CustomDialog extends Dialog {
         setClickListener(mLeftClickListener, mRightClickListener);
     }
 
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+    }
+
     public CustomDialog(Context context) {
         // Dialog 배경을 투명 처리 해준다.
         super(context, android.R.style.Theme_Translucent_NoTitleBar);

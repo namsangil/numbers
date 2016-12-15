@@ -37,11 +37,6 @@ public class GameMode2 extends AppCompatActivity {
                 break;
         }
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        finish();
-    }
 
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override

@@ -23,6 +23,7 @@ public class GameMode1 extends Activity {
     private CustomDialog mCustomDialog;
     Button endBt;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
