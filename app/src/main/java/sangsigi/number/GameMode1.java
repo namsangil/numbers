@@ -63,6 +63,7 @@ public class GameMode1 extends Activity {
         @Override
         public void onClick(View v) {
             if(MainActivity.coin != 0) {
+                MainActivity.coin--;
                 mCustomDialog.hide();
                 onResume();
             }
