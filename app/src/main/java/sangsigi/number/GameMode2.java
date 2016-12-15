@@ -25,9 +25,15 @@ public class GameMode2 extends AppCompatActivity {
         setContentView(R.layout.gamemode2);
         timer = (TextView)findViewById(R.id.frag2_timer);
 
-        timerThread = new TimerThread(timer);
     }
 
+
+    protected void onResume(){
+        super.onResume();
+
+        timer.setText("0.0");
+        timerThread = new TimerThread(timer);
+    }
 
 
     public void onClickView(View v) {
@@ -46,6 +52,8 @@ public class GameMode2 extends AppCompatActivity {
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            mCustomDialog.hide();
+            onResume();
             //재시작
         }
     };

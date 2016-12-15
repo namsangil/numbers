@@ -38,7 +38,7 @@ class TimerThread {
                             long endTime = System.currentTimeMillis();
                             //  cnt++;
                             time = (Math.floor((endTime-startTime)/100d))/10d;
-                            timer.setText(""+ time);
+                            if(isInboxThreadRunning)timer.setText(""+ time);
 
                         }
                     });

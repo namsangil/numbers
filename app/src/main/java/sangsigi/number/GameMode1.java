@@ -34,6 +34,12 @@ public class GameMode1 extends Activity {
         setContentView(R.layout.gamemode1);
         timer = (TextView)findViewById(R.id.frag1_timer);
 
+    }
+
+    protected void onResume(){
+        super.onResume();
+
+        timer.setText("0.0");
         timerThread = new TimerThread(timer);
     }
 
@@ -56,6 +62,9 @@ public class GameMode1 extends Activity {
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
+            mCustomDialog.hide();
+            onResume();
+
             //재시작
         }
     };

@@ -24,7 +24,7 @@
             android:textColor="@android:color/black"
             android:gravity="center"
             sl:scale_top="20"
-            sl:scale_left="200"
+            sl:scale_left="270"
             sl:scale_textsize="30"
             sl:scale_width="100"
             sl:scale_height="40" />
