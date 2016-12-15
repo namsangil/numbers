@@ -5,19 +5,18 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="sangsigi.number.MainActivity">
-
 
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/darker_gray"
+        android:layout_margin="10dp"
+        android:id="@+id/mainScreen"
+
         sl:scale_base_width="400"
-        sl:scale_base_height="200">
+        sl:scale_base_height="640">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -28,7 +27,11 @@
             sl:scale_textsize="20"
             android:text="hello_world"
             android:textColor="@android:color/white"
-            android:background="@android:color/black" />
+            android:background="@android:color/black"
+            android:visibility="gone"
+            />
+
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,8 +39,49 @@
             sl:scale_top="30"
             sl:scale_width="50"
             sl:scale_height="50"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_launcher"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/mode1start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+
+            sl:scale_left="60"
+            sl:scale_top="270"
+            sl:scale_width="130"
+            sl:scale_height="100"
+            sl:scale_textsize="50"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/mode2start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            sl:scale_left="210"
+            sl:scale_top="270"
+            sl:scale_width="130"
+            sl:scale_height="100"
+            sl:scale_textsize="50"
+            >
+        </Button>
+
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frameLayout"
+
+            sl:scale_width="400"
+            sl:scale_height="640"
+
+            ></FrameLayout>
     </com.ssomai.android.scalablelayout.ScalableLayout>
+
 
 
 </RelativeLayout>

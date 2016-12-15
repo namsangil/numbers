@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black"
+        android:layout_margin="10dp"
+
+
+        sl:scale_base_width="400"
+        sl:scale_base_height="640">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag1_tv"
+            sl:scale_left="100"
+            sl:scale_top="100"
+            sl:scale_width="200"
+            sl:scale_height="40"
+            sl:scale_textsize="30"
+            android:text="game_mode_1"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/frag1_bt"
+            sl:scale_left="10"
+            sl:scale_top="10"
+            sl:scale_width="100"
+            sl:scale_height="50"
+            sl:scale_textsize="20"
+            android:text="End"
+            >
+
+        </Button>
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</LinearLayout>
