@@ -62,9 +62,13 @@ public class GameMode1 extends Activity {
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            mCustomDialog.hide();
-            onResume();
-
+            if(MainActivity.coin != 0) {
+                mCustomDialog.hide();
+                onResume();
+            }
+            else{
+                Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
+            }
             //재시작
         }
     };

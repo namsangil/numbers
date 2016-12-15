@@ -7,10 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
+    static int coin = 3;
+    TextView coinState;
     Button mode1;
     Button mode2;
 
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         backPressCloseHandler = new BackPressCloseHandler(this);
 
+        coinState = (TextView) findViewById(R.id.coinstate);
         mode1 = (Button) findViewById(R.id.mode1start);
         mode2 = (Button) findViewById(R.id.mode2start);
 
@@ -31,8 +35,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent i = new Intent(MainActivity.this, GameMode1.class);
-                startActivity(i);
+                if (coin != 0) {
+                    coin--;
+                    Intent i = new Intent(MainActivity.this, GameMode1.class);
+                    startActivity(i);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
@@ -41,13 +51,25 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
 
-                Intent i = new Intent(MainActivity.this, GameMode2.class);
-                startActivity(i);
+                if (coin != 0) {
+                    coin--;
+                    Intent i = new Intent(MainActivity.this, GameMode2.class);
+                    startActivity(i);
 
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
     }
+
+    protected void onStart() {
+        super.onStart();
+        coinState.setText(coin+"/3");
+    }
+
     public void onBackPressed() {
         //super.onBackPressed();
         backPressCloseHandler.onBackPressed();

@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by nsi on 2016-12-15.
@@ -52,8 +53,13 @@ public class GameMode2 extends AppCompatActivity {
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            mCustomDialog.hide();
-            onResume();
+            if(MainActivity.coin != 0) {
+                mCustomDialog.hide();
+                onResume();
+            }
+            else{
+                Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
+            }
             //재시작
         }
     };
