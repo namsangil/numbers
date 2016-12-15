@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+
+    <com.ssomai.android.scalablelayout.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@android:color/darker_gray"
+
+        sl:scale_base_height="130"
+        sl:scale_base_width="150">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:text="Title"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            sl:scale_top="0"
+            sl:scale_left="0"
+            sl:scale_textsize="18"
+            sl:scale_width="150"
+            sl:scale_height="25" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:text="content"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            sl:scale_top="23"
+            sl:scale_left="0"
+            sl:scale_textsize="10"
+            sl:scale_width="150"
+            sl:scale_height="15" />
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="다시 시작"
+            sl:scale_top="50"
+            sl:scale_left="0"
+            sl:scale_textsize="20"
+            sl:scale_width="150"
+            sl:scale_height="35" />
+
+        <Button
+            android:id="@+id/mainmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="메인 메뉴"
+            sl:scale_top="90"
+            sl:scale_left="0"
+            sl:scale_textsize="20"
+            sl:scale_width="150"
+            sl:scale_height="35" />
+
+
+    </com.ssomai.android.scalablelayout.ScalableLayout>
+
+</RelativeLayout>

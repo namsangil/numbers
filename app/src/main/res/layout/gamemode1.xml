@@ -8,36 +8,38 @@
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/black"
         android:layout_margin="10dp"
+        android:background="@android:color/black"
 
 
-        sl:scale_base_width="400"
-        sl:scale_base_height="640">
+        sl:scale_base_height="640"
+        sl:scale_base_width="400">
+
         <TextView
+            android:id="@+id/frag1_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/frag1_tv"
-            sl:scale_left="100"
-            sl:scale_top="100"
-            sl:scale_width="200"
-            sl:scale_height="40"
-            sl:scale_textsize="30"
+            android:background="@android:color/white"
             android:text="game_mode_1"
             android:textColor="@android:color/black"
-            android:background="@android:color/white"
-            />
+            sl:scale_height="40"
+            sl:scale_left="100"
+            sl:scale_textsize="30"
+            sl:scale_top="100"
+            sl:scale_width="200" />
 
         <Button
+            android:id="@+id/mode1_end"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/frag1_bt"
+            android:text="End"
+            sl:scale_height="50"
             sl:scale_left="10"
+            sl:scale_textsize="20"
             sl:scale_top="10"
             sl:scale_width="100"
-            sl:scale_height="50"
-            sl:scale_textsize="20"
-            android:text="End"
+            android:onClick="onClickView"
+
             >
 
         </Button>
