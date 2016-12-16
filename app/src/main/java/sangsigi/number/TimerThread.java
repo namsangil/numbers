@@ -1,6 +1,7 @@
 package sangsigi.number;
 
 import android.os.Handler;
+import android.util.Log;
 import android.widget.TextView;
 
 import static android.os.SystemClock.sleep;
@@ -13,9 +14,10 @@ class TimerThread {
 
     boolean isInboxThreadRunning = true;
     boolean sign = true;
+    boolean pause = true;
     long startTime = 0;
     double time;
-    int cnt = 0;
+    double sum = 0;
 
 
     TimerThread(final TextView timer){
@@ -37,8 +39,11 @@ class TimerThread {
                             //  Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
                             long endTime = System.currentTimeMillis();
                             //  cnt++;
-                            time = (Math.floor((endTime-startTime)/100d))/10d;
-                            if(isInboxThreadRunning)timer.setText(""+ time);
+                            time = (endTime-startTime);
+                            double printTime = (sum + time);
+                            printTime = Math.floor(printTime/100d)/10d;
+
+                            if(pause)timer.setText(""+printTime);
 
                         }
                     });
@@ -52,5 +57,16 @@ class TimerThread {
     public double stopThread(){
         isInboxThreadRunning = false;
         return time;
+    }
+
+    public void reSumeThread(){
+        startTime = System.currentTimeMillis();
+        pause = true;
+    }
+
+    public void pauseThread(){
+        sum += time;
+        pause = false;
+
     }
 }

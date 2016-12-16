@@ -34,13 +34,18 @@ public class GameMode1 extends Activity {
         setContentView(R.layout.gamemode1);
         timer = (TextView)findViewById(R.id.frag1_timer);
 
+        timerThread = new TimerThread(timer);
     }
 
     protected void onResume(){
         super.onResume();
+        timerThread.reSumeThread();
 
-        timer.setText("0.0");
-        timerThread = new TimerThread(timer);
+    }
+
+    protected void onPause(){
+        super.onPause();
+        timerThread.pauseThread();
     }
 
 
@@ -65,7 +70,8 @@ public class GameMode1 extends Activity {
             if(MainActivity.coin != 0) {
                 MainActivity.coin--;
                 mCustomDialog.hide();
-                onResume();
+                timer.setText("0.0");
+                timerThread = new TimerThread(timer);
             }
             else{
                 Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
