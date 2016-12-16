@@ -18,6 +18,7 @@ class TimerThread {
     long startTime = 0;
     double time;
     double sum = 0;
+    double printTime = 0;
 
 
     TimerThread(final TextView timer){
@@ -40,7 +41,7 @@ class TimerThread {
                             long endTime = System.currentTimeMillis();
                             //  cnt++;
                             time = (endTime-startTime);
-                            double printTime = (sum + time);
+                            printTime = (sum + time);
                             printTime = Math.floor(printTime/100d)/10d;
 
                             if(pause)timer.setText(""+printTime);
@@ -56,7 +57,8 @@ class TimerThread {
 
     public double stopThread(){
         isInboxThreadRunning = false;
-        return time;
+        pause = false;
+        return printTime;
     }
 
     public void reSumeThread(){
