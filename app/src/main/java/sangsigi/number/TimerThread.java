@@ -20,9 +20,15 @@ class TimerThread {
     double m_time;
     double m_sum = 0;
     double m_printTime = 0;
+    TextView m_tv_timer;
+    TextView m_tv_solution;
+    TextView[] m_arrayButton;
 
 
     TimerThread(final TextView tv_timer, final TextView tv_solution, final TextView[] arrayButton) {
+        this.m_tv_timer = tv_timer;
+        this.m_tv_solution = tv_solution;
+        this.m_arrayButton = arrayButton;
         final Handler handler = new Handler();
         new Thread(new Runnable() {
 
@@ -40,25 +46,9 @@ class TimerThread {
                             //  Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
                             long m_endTime = System.currentTimeMillis();
                             //  cnt++;
-                            m_time = (m_endTime - m_startTime);
-                            m_printTime = (m_sum + m_time);
-                            m_printTime = Math.floor(m_printTime / 100d) / 10d;
+                            setTimer(m_endTime);                                            //타이머 동작
+                            buttonClick(m_endTime);                                         //버튼 클릭시 발생하는 로직
 
-                            if (m_pause) tv_timer.setText("" + m_printTime);
-                            if (!tv_solution.getText().equals("")) {                     //답이 써지면 시간을 잰다
-                                if (m_insertAnswerTime == 0) {
-                                    m_insertAnswerTime = System.currentTimeMillis();        //시간 재기 시작
-                                    disableButton(arrayButton);
-                                }
-
-                                if (m_endTime - m_insertAnswerTime > 1000) {                //시간이 3초가 넘어가면
-
-                                    tv_solution.setText("");                                //TextView를 비우고
-                                    m_insertAnswerTime = 0;                             //시간 초기화
-                                    enableButton(arrayButton);
-
-                                }
-                            }
 
                         }
                     });
@@ -68,6 +58,32 @@ class TimerThread {
         }).start();
 
     }
+    public void buttonClick(long m_endTime){
+        if (!m_tv_solution.getText().equals("")) {                     //답이 써지면 시간을 잰다
+            if (m_insertAnswerTime == 0) {
+                m_insertAnswerTime = System.currentTimeMillis();        //시간 재기 시작
+                disableButton(m_arrayButton);
+            }
+
+            if (m_endTime - m_insertAnswerTime > 1000) {                //시간이 3초가 넘어가면
+
+                m_tv_solution.setText("");                                //TextView를 비우고
+                m_insertAnswerTime = 0;                             //시간 초기화
+                enableButton(m_arrayButton);
+
+            }
+        }
+    }
+
+    public void setTimer(long m_endTime){
+
+        m_time = (m_endTime - m_startTime);
+        m_printTime = (m_sum + m_time);
+        m_printTime = Math.floor(m_printTime / 100d) / 10d;
+
+        if (m_pause) m_tv_timer.setText("" + m_printTime);
+    }
+
 
     public void disableButton(TextView[] arrayButton) {
         for (int i = 0; i < arrayButton.length; i++) {

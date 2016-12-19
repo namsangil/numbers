@@ -32,7 +32,7 @@ public class GameMode1 extends Activity {
     private CustomDialog mCustomDialog;
     TimerThread timerThread;                //시간재기용 스레드
     TextView timer;
-    TextView solution;
+    TextView m_solution;
     Button[] arrayButton;
 
     int dap[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
@@ -43,9 +43,9 @@ public class GameMode1 extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamemode1);
         timer = (TextView) findViewById(R.id.frag1_timer);                                  //시간초
-        solution = (TextView) findViewById(R.id.frag1_solution);                           //답칸
+        m_solution = (TextView) findViewById(R.id.frag1_solution);                           //답칸
         arrayButton = getButtonSource();                                                    // 0 ~ 9 숫자버튼
-        timerThread = new TimerThread(timer, solution, arrayButton);                    //시간초 스레드 시작
+        timerThread = new TimerThread(timer, m_solution, arrayButton);                    //시간초 스레드 시작
 
 
     }
@@ -75,43 +75,33 @@ public class GameMode1 extends Activity {
                 mCustomDialog.show();
                 break;
             case R.id.select1:
-                solution.setText("1");
                 insertAnswer = 1;
                 break;
             case R.id.select2:
-                solution.setText("2");
                 insertAnswer = 2;
                 break;
             case R.id.select3:
-                solution.setText("3");
                 insertAnswer = 3;
                 break;
             case R.id.select4:
-                solution.setText("4");
                 insertAnswer = 4;
                 break;
             case R.id.select5:
-                solution.setText("5");
                 insertAnswer = 5;
                 break;
             case R.id.select6:
-                solution.setText("6");
                 insertAnswer = 6;
                 break;
             case R.id.select7:
-                solution.setText("7");
                 insertAnswer = 7;
                 break;
             case R.id.select8:
-                solution.setText("8");
                 insertAnswer = 8;
                 break;
             case R.id.select9:
-                solution.setText("9");
                 insertAnswer = 9;
                 break;
             case R.id.select0:
-                solution.setText("0");
                 insertAnswer = 0;
                 break;
         }
@@ -140,23 +130,24 @@ public class GameMode1 extends Activity {
             }
         } else {
             Toast.makeText(this, "틀렸습니다.", Toast.LENGTH_SHORT).show();
+            m_solution.setText("" + insertAnswer);
         }
 
     }
 
-    public Button[] getButtonSource(){
+    public Button[] getButtonSource() {
         Button[] m_arrayButton = new Button[10];
 
-        m_arrayButton[0] = (Button)findViewById(R.id.select0);
-        m_arrayButton[1] = (Button)findViewById(R.id.select1);
-        m_arrayButton[2] = (Button)findViewById(R.id.select2);
-        m_arrayButton[3] = (Button)findViewById(R.id.select3);
-        m_arrayButton[4] = (Button)findViewById(R.id.select4);
-        m_arrayButton[5] = (Button)findViewById(R.id.select5);
-        m_arrayButton[6] = (Button)findViewById(R.id.select6);
-        m_arrayButton[7] = (Button)findViewById(R.id.select7);
-        m_arrayButton[8] = (Button)findViewById(R.id.select8);
-        m_arrayButton[9] = (Button)findViewById(R.id.select9);
+        m_arrayButton[0] = (Button) findViewById(R.id.select0);
+        m_arrayButton[1] = (Button) findViewById(R.id.select1);
+        m_arrayButton[2] = (Button) findViewById(R.id.select2);
+        m_arrayButton[3] = (Button) findViewById(R.id.select3);
+        m_arrayButton[4] = (Button) findViewById(R.id.select4);
+        m_arrayButton[5] = (Button) findViewById(R.id.select5);
+        m_arrayButton[6] = (Button) findViewById(R.id.select6);
+        m_arrayButton[7] = (Button) findViewById(R.id.select7);
+        m_arrayButton[8] = (Button) findViewById(R.id.select8);
+        m_arrayButton[9] = (Button) findViewById(R.id.select9);
 
         return m_arrayButton;
     }
@@ -168,7 +159,7 @@ public class GameMode1 extends Activity {
                 MainActivity.coin--;
                 mCustomDialog.hide();
                 timer.setText("0.0");
-                timerThread = new TimerThread(timer,solution, arrayButton);
+                timerThread = new TimerThread(timer, m_solution, arrayButton);
             } else {
                 Toast.makeText(getApplicationContext(), "코인 부족", Toast.LENGTH_SHORT).show();
             }
