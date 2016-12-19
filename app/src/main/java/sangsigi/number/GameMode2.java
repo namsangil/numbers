@@ -26,7 +26,7 @@ public class GameMode2 extends AppCompatActivity {
         setContentView(R.layout.gamemode2);
         timer = (TextView)findViewById(R.id.frag2_timer);
 
-        timerThread = new TimerThread(timer);
+        //timerThread = new TimerThread(timer,);
     }
 
     protected void onResume(){
@@ -61,7 +61,7 @@ public class GameMode2 extends AppCompatActivity {
                 MainActivity.coin--;
                 mCustomDialog.hide();
                 timer.setText("0.0");
-                timerThread = new TimerThread(timer);
+               // timerThread = new TimerThread(timer);
             }
             else{
                 Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();

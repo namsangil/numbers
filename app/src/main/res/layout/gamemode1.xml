@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <com.ssomai.android.scalablelayout.ScalableLayout
+        android:id="@+id/mode1_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="@android:color/black"
-
+        android:background="@android:color/darker_gray"
 
         sl:scale_base_height="640"
         sl:scale_base_width="400">
@@ -34,17 +34,163 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="End"
-            sl:scale_height="50"
+            sl:scale_top="10"
             sl:scale_left="10"
             sl:scale_textsize="20"
-            sl:scale_top="10"
             sl:scale_width="100"
+            sl:scale_height="50"
             android:onClick="onClickView"
-
             >
-
         </Button>
 
+        <TextView
+            android:id="@+id/frag1_solution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            sl:scale_top="430"
+            sl:scale_left="160"
+            sl:scale_textsize="50"
+            sl:scale_width="80"
+            sl:scale_height="70" />
+
+        <Button
+            android:id="@+id/select1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            sl:scale_top="500"
+            sl:scale_left="25"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+
+        <Button
+            android:id="@+id/select2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            sl:scale_top="500"
+            sl:scale_left="95"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+        <Button
+            android:id="@+id/select3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            sl:scale_top="500"
+            sl:scale_left="165"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+        <Button
+            android:id="@+id/select4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4"
+            sl:scale_top="500"
+            sl:scale_left="235"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+        <Button
+            android:id="@+id/select5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            sl:scale_top="500"
+            sl:scale_left="305"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+
+
+        <Button
+            android:id="@+id/select6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6"
+            sl:scale_top="565"
+            sl:scale_left="25"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+
+        <Button
+            android:id="@+id/select7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            sl:scale_top="565"
+            sl:scale_left="95"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+        <Button
+            android:id="@+id/select8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8"
+            sl:scale_top="565"
+            sl:scale_left="165"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+        <Button
+            android:id="@+id/select9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            sl:scale_top="565"
+            sl:scale_left="235"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
+        <Button
+            android:id="@+id/select0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            sl:scale_top="565"
+            sl:scale_left="305"
+            sl:scale_textsize="20"
+            sl:scale_width="70"
+            sl:scale_height="70"
+            android:onClick="onClickView"
+
+            ></Button>
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </LinearLayout>
