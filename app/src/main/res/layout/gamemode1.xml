@@ -44,47 +44,6 @@
             >
         </Button>
 
-        <com.ssomai.android.scalablelayout.ScalableLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-
-
-            sl:scale_top="70"
-            sl:scale_left="25"
-            sl:scale_width="350"
-            sl:scale_height="350"
-            inside_sl:scale_base_height = "350"
-            inside_sl:scale_base_width = "350"
-
-            android:background="@android:color/white"
-            >
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                inside_sl:scale_top="50"
-                inside_sl:scale_left="155"
-                inside_sl:scale_width="40"
-                inside_sl:scale_height="40"
-                inside_sl:scale_textsize="15"
-                android:text="1"
-                />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                inside_sl:scale_top="80"
-                inside_sl:scale_left="230"
-                inside_sl:scale_width="40"
-                inside_sl:scale_height="40"
-                inside_sl:scale_textsize="15"
-                android:text="2"
-                />
-
-        </com.ssomai.android.scalablelayout.ScalableLayout>
-
         <Button
             android:id="@+id/select1"
             android:layout_width="wrap_content"
@@ -233,6 +192,143 @@
             sl:scale_textsize="50"
             sl:scale_width="70"
             sl:scale_height="60" />
+
+        <com.ssomai.android.scalablelayout.ScalableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            sl:scale_top="70"
+            sl:scale_left="25"
+            sl:scale_width="350"
+            sl:scale_height="350"
+            inside_sl:scale_base_height = "350"
+            inside_sl:scale_base_width = "350"
+
+            android:background="@android:color/white"
+            >
+
+            <Button
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="30"
+                inside_sl:scale_left="155"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="1"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="60"
+                inside_sl:scale_left="220"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="2" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="115"
+                inside_sl:scale_left="265"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="3" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="190"
+                inside_sl:scale_left="265"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="4" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="245"
+                inside_sl:scale_left="220"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="5" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="270"
+                inside_sl:scale_left="155"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="6"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="245"
+                inside_sl:scale_left="90"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="7" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="190"
+                inside_sl:scale_left="45"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="8" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="115"
+                inside_sl:scale_left="45"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="9" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                inside_sl:scale_top="60"
+                inside_sl:scale_left="90"
+                inside_sl:scale_width="45"
+                inside_sl:scale_height="45"
+                inside_sl:scale_textsize="15"
+                android:text="0" />
+
+
+
+
+        </com.ssomai.android.scalablelayout.ScalableLayout>
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </LinearLayout>
