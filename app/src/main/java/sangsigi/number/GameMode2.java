@@ -31,13 +31,13 @@ public class GameMode2 extends AppCompatActivity {
 
     protected void onResume(){
         super.onResume();
-        timerThread.reSumeThread();
+     //   timerThread.reSumeThread();
 
     }
 
     protected void onPause(){
         super.onPause();
-        timerThread.pauseThread();
+      //  timerThread.pauseThread();
     }
 
 

@@ -11,12 +11,30 @@
         android:id="@+id/mainScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@android:color/darker_gray"
+        android:background="@mipmap/mainbg"
 
         sl:scale_base_height="640"
-        sl:scale_base_width="400">
+        sl:scale_base_width="400"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
 
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+            sl:scale_top="130"
+            sl:scale_width="280"
+            sl:scale_height="150"
+
+            android:background="@mipmap/shapenumber"
+
+
+            />
         <TextView
             android:id="@+id/coinstate"
             android:layout_width="wrap_content"
@@ -35,38 +53,34 @@
             />
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_launcher"
-            android:visibility="gone"
-            sl:scale_height="50"
-            sl:scale_left="200"
-            sl:scale_top="30"
-            sl:scale_width="50" />
-
         <Button
             android:id="@+id/mode1start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
 
-            sl:scale_height="100"
-            sl:scale_left="60"
+            android:layout_gravity="center_horizontal"
+            sl:scale_top="330"
+            sl:scale_height="80"
+            sl:scale_width="200"
             sl:scale_textsize="50"
-            sl:scale_top="270"
-            sl:scale_width="130"></Button>
+
+            android:background="@mipmap/normal_btn"
+
+            ></Button>
 
         <Button
             android:id="@+id/mode2start"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"
-            sl:scale_height="100"
-            sl:scale_left="210"
+            android:layout_gravity="center_horizontal"
+            sl:scale_top="440"
+            sl:scale_height="80"
+            sl:scale_width="200"
             sl:scale_textsize="50"
-            sl:scale_top="270"
-            sl:scale_width="130"></Button>
+
+            android:background="@mipmap/hard_btn"
+
+            ></Button>
 
 
         <FrameLayout

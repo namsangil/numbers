@@ -1,7 +1,9 @@
 package sangsigi.number;
 
+import android.graphics.Color;
 import android.os.Handler;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 
 import static android.os.SystemClock.sleep;
@@ -21,13 +23,14 @@ class TimerThread {
     double m_sum = 0;
     double m_printTime = 0;
     TextView m_tv_timer;
-    TextView m_tv_solution;
+    int m_selectNumberId;
     TextView[] m_arrayButton;
 
 
-    TimerThread(final TextView tv_timer, final TextView tv_solution, final TextView[] arrayButton) {
+
+
+    TimerThread(final TextView tv_timer, final TextView[] arrayButton) {
         this.m_tv_timer = tv_timer;
-        this.m_tv_solution = tv_solution;
         this.m_arrayButton = arrayButton;
         final Handler handler = new Handler();
         new Thread(new Runnable() {
@@ -57,19 +60,23 @@ class TimerThread {
             }
         }).start();
 
-    }
-    public void buttonClick(long m_endTime){
-        if (!m_tv_solution.getText().equals("")) {                     //답이 써지면 시간을 잰다
-            if (m_insertAnswerTime == 0) {
-                m_insertAnswerTime = System.currentTimeMillis();        //시간 재기 시작
-                disableButton(m_arrayButton);
             }
+        public void buttonClick(long m_endTime){
 
-            if (m_endTime - m_insertAnswerTime > 1000) {                //시간이 3초가 넘어가면
 
-                m_tv_solution.setText("");                                //TextView를 비우고
-                m_insertAnswerTime = 0;                             //시간 초기화
-                enableButton(m_arrayButton);
+            if (GameMode1.wrongAnswer) {                     //틀린 답 버튼을 누르면 시간을 잰다
+                if (m_insertAnswerTime == 0) {
+                    GameMode1.selectViewButton.setBackgroundColor(Color.RED);
+                    m_insertAnswerTime = System.currentTimeMillis();        //시간 재기 시작
+                    disableButton(m_arrayButton);
+                }
+
+                if (m_endTime - m_insertAnswerTime > 1000) {                //시간이 1초가 넘어가면
+
+                    GameMode1.selectViewButton.setBackgroundColor(Color.LTGRAY);
+                    GameMode1.wrongAnswer = false ;                              //선택 해제 후
+                    m_insertAnswerTime = 0;                             //시간 초기화
+                    enableButton(m_arrayButton);
 
             }
         }
