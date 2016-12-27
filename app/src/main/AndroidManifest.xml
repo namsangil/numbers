@@ -19,10 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameMode1"
-            android:theme = "@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"></activity>
         <activity android:name=".GameMode2"
-            android:theme = "@style/Theme.AppCompat.NoActionBar"
             android:screenOrientation="portrait"></activity>
     </application>
 

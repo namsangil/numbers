@@ -1,5 +1,6 @@
 package sangsigi.number;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
@@ -14,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -47,6 +49,7 @@ public class GameMode1 extends Activity {
         arrayButton = getButtonSource();                                                    // 0 ~ 9 숫자버튼
         timerThread = new TimerThread(timer, m_solution, arrayButton);                    //시간초 스레드 시작
 
+      // setTheme(android.R.style.Theme_DeviceDefault_NoActionBar_Fullscreen);
 
     }
 

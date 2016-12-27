@@ -3,7 +3,8 @@
     xmlns:sl="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragment1"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/mode1_layout"
@@ -11,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:background="@android:color/darker_gray"
-        xmlns:inside_sl="http://schemas.android.com/apk/res-auto"
 
         sl:scale_base_height="640"
         sl:scale_base_width="400">
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\?"
-            sl:scale_top="70"
+            sl:scale_top="100"
             sl:scale_left="30"
             sl:scale_textsize="20"
             sl:scale_width="50"
@@ -44,16 +44,17 @@
             >
         </Button>
 
+
         <Button
             android:id="@+id/select1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"
-            sl:scale_top="500"
+            sl:scale_top="470"
             sl:scale_left="25"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
+            android:background="@mipmap/number1"
             android:onClick="onClickView"
 
             ></Button>
@@ -62,12 +63,12 @@
             android:id="@+id/select2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2"
-            sl:scale_top="500"
+            sl:scale_top="470"
             sl:scale_left="95"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
+            android:background="@mipmap/number2"
             android:onClick="onClickView"
 
             ></Button>
@@ -75,12 +76,12 @@
             android:id="@+id/select3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="3"
-            sl:scale_top="500"
+            sl:scale_top="470"
             sl:scale_left="165"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
+            android:background="@mipmap/number3"
             android:onClick="onClickView"
 
             ></Button>
@@ -88,26 +89,26 @@
             android:id="@+id/select4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="4"
-            sl:scale_top="500"
+            sl:scale_top="470"
             sl:scale_left="235"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number4"
 
             ></Button>
         <Button
             android:id="@+id/select5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="5"
-            sl:scale_top="500"
+            sl:scale_top="470"
             sl:scale_left="305"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number5"
 
             ></Button>
 
@@ -116,13 +117,13 @@
             android:id="@+id/select6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="6"
-            sl:scale_top="565"
+            sl:scale_top="545"
             sl:scale_left="25"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number6"
 
             ></Button>
 
@@ -130,52 +131,52 @@
             android:id="@+id/select7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="7"
-            sl:scale_top="565"
+            sl:scale_top="545"
             sl:scale_left="95"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number7"
 
             ></Button>
         <Button
             android:id="@+id/select8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="8"
-            sl:scale_top="565"
+            sl:scale_top="545"
             sl:scale_left="165"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number8"
 
             ></Button>
         <Button
             android:id="@+id/select9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="9"
-            sl:scale_top="565"
+            sl:scale_top="545"
             sl:scale_left="235"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number9"
 
             ></Button>
         <Button
             android:id="@+id/select0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            sl:scale_top="565"
+            sl:scale_top="545"
             sl:scale_left="305"
             sl:scale_textsize="20"
             sl:scale_width="70"
             sl:scale_height="70"
             android:onClick="onClickView"
+            android:background="@mipmap/number0"
 
             ></Button>
 
@@ -191,32 +192,49 @@
             sl:scale_left="165"
             sl:scale_textsize="50"
             sl:scale_width="70"
-            sl:scale_height="60" />
+            sl:scale_height="60"
+            android:visibility="gone"
+            />
 
         <com.ssomai.android.scalablelayout.ScalableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
 
-            sl:scale_top="70"
+            sl:scale_top="100"
             sl:scale_left="25"
             sl:scale_width="350"
             sl:scale_height="350"
-            inside_sl:scale_base_height = "350"
-            inside_sl:scale_base_width = "350"
+            sl:scale_base_height= "354"
+            sl:scale_base_width= "354"
 
             android:background="@android:color/white"
             >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                sl:scale_width="230"
+                sl:scale_height="230"
+                android:layout_gravity="center"
+                android:background="@mipmap/defense"
+
+                >
+
+
+
+            </LinearLayout>
 
             <Button
                     android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="30"
-                inside_sl:scale_left="155"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="30"
+                sl:scale_left="155"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="1"
                 />
 
@@ -224,22 +242,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="60"
-                inside_sl:scale_left="220"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="60"
+                sl:scale_left="220"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="2" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="115"
-                inside_sl:scale_left="265"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="115"
+                sl:scale_left="265"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="3" />
 
 
@@ -247,11 +265,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="190"
-                inside_sl:scale_left="265"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="190"
+                sl:scale_left="265"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="4" />
 
 
@@ -259,11 +277,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="245"
-                inside_sl:scale_left="220"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="245"
+                sl:scale_left="220"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="5" />
 
 
@@ -271,11 +289,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="270"
-                inside_sl:scale_left="155"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="270"
+                sl:scale_left="155"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="6"
                 />
 
@@ -283,22 +301,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="245"
-                inside_sl:scale_left="90"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="245"
+                sl:scale_left="90"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="7" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="190"
-                inside_sl:scale_left="45"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="190"
+                sl:scale_left="45"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="8" />
 
 
@@ -306,11 +324,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="115"
-                inside_sl:scale_left="45"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="115"
+                sl:scale_left="45"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="9" />
 
 
@@ -318,17 +336,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                inside_sl:scale_top="60"
-                inside_sl:scale_left="90"
-                inside_sl:scale_width="45"
-                inside_sl:scale_height="45"
-                inside_sl:scale_textsize="15"
+                sl:scale_top="60"
+                sl:scale_left="90"
+                sl:scale_width="45"
+                sl:scale_height="45"
+                sl:scale_textsize="15"
                 android:text="0" />
 
 
 
 
         </com.ssomai.android.scalablelayout.ScalableLayout>
+
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
 </LinearLayout>
