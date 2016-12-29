@@ -23,7 +23,6 @@ class TimerThread {
     double m_sum = 0;
     double m_printTime = 0;
     TextView m_tv_timer;
-    int m_selectNumberId;
     TextView[] m_arrayButton;
 
 
@@ -65,15 +64,17 @@ class TimerThread {
 
 
             if (GameMode1.wrongAnswer) {                     //틀린 답 버튼을 누르면 시간을 잰다
+                Log.e("TimerThread ","ddddd");
                 if (m_insertAnswerTime == 0) {
-                    GameMode1.selectViewButton.setBackgroundColor(Color.RED);
+                    GameMode1.selectViewButton.setBackgroundResource(R.drawable.circle_border_fail);
                     m_insertAnswerTime = System.currentTimeMillis();        //시간 재기 시작
                     disableButton(m_arrayButton);
                 }
 
                 if (m_endTime - m_insertAnswerTime > 1000) {                //시간이 1초가 넘어가면
 
-                    GameMode1.selectViewButton.setBackgroundColor(Color.LTGRAY);
+
+                    GameMode1.selectViewButton.setBackgroundResource(R.drawable.circle_border_ordinary);
                     GameMode1.wrongAnswer = false ;                              //선택 해제 후
                     m_insertAnswerTime = 0;                             //시간 초기화
                     enableButton(m_arrayButton);
@@ -94,11 +95,13 @@ class TimerThread {
 
     public void disableButton(TextView[] arrayButton) {
         for (int i = 0; i < arrayButton.length; i++) {
+            if(GameMode1.disableIndex == i) continue;
             arrayButton[i].setEnabled(false);
         }
     }
     public void enableButton(TextView[] arrayButton) {
         for (int i = 0; i < arrayButton.length; i++) {
+            if(GameMode1.disableIndex == i) continue;
             arrayButton[i].setEnabled(true);
         }
     }

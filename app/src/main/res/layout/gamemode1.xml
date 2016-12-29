@@ -1,37 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:sl="http://schemas.android.com/apk/res-auto"
     android:id="@+id/fragment1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/gamebg"
     android:orientation="vertical">
 
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/mode1_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:background="@mipmap/gamebg"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
 
         sl:scale_base_height="640"
         sl:scale_base_width="400">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/frag1_round"
+
+            android:text="ROUND X"
+
+            sl:scale_top="25"
+            sl:scale_left="30"
+            sl:scale_width="200"
+            sl:scale_height="50"
+            sl:scale_textsize="40"
+            android:background="#00ffffff"
+            >
+
+        </TextView>
+
+        <TextView
             android:id="@+id/frag1_timer"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/white"
+            android:background="#00ffffff"
             android:text="0.0"
             android:textColor="@android:color/black"
             android:gravity="center"
-            sl:scale_top="10"
+            sl:scale_top="25"
             sl:scale_left="270"
-            sl:scale_textsize="30"
+            sl:scale_textsize="40"
             sl:scale_width="100"
             sl:scale_height="50" />
 
         <Button
-            android:id="@+id/mode1_end"
+            android:id="@+id/mode1_help"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="\?"
@@ -40,7 +58,6 @@
             sl:scale_textsize="20"
             sl:scale_width="50"
             sl:scale_height="50"
-            android:onClick="onClickView"
             >
         </Button>
 
@@ -52,8 +69,8 @@
             sl:scale_top="470"
             sl:scale_left="25"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:background="@mipmap/number1"
             android:onClick="onClickView"
 
@@ -66,8 +83,8 @@
             sl:scale_top="470"
             sl:scale_left="95"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:background="@mipmap/number2"
             android:onClick="onClickView"
 
@@ -79,8 +96,8 @@
             sl:scale_top="470"
             sl:scale_left="165"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:background="@mipmap/number3"
             android:onClick="onClickView"
 
@@ -92,8 +109,8 @@
             sl:scale_top="470"
             sl:scale_left="235"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number4"
 
@@ -105,8 +122,8 @@
             sl:scale_top="470"
             sl:scale_left="305"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number5"
 
@@ -120,8 +137,8 @@
             sl:scale_top="545"
             sl:scale_left="25"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number6"
 
@@ -134,8 +151,8 @@
             sl:scale_top="545"
             sl:scale_left="95"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number7"
 
@@ -147,8 +164,8 @@
             sl:scale_top="545"
             sl:scale_left="165"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number8"
 
@@ -160,8 +177,8 @@
             sl:scale_top="545"
             sl:scale_left="235"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number9"
 
@@ -173,8 +190,8 @@
             sl:scale_top="545"
             sl:scale_left="305"
             sl:scale_textsize="20"
-            sl:scale_width="70"
-            sl:scale_height="70"
+            sl:scale_width="65"
+            sl:scale_height="65"
             android:onClick="onClickView"
             android:background="@mipmap/number0"
 
@@ -208,7 +225,7 @@
             sl:scale_base_height= "354"
             sl:scale_base_width= "354"
 
-            android:background="#40FFFFFF"
+            android:background="#33ffffff"
             >
 
             <LinearLayout
@@ -218,8 +235,7 @@
                 sl:scale_width="230"
                 sl:scale_height="230"
                 android:layout_gravity="center"
-                android:background="@mipmap/defense"
-
+                android:background="@mipmap/defense6"
                 >
 
 
@@ -230,38 +246,30 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                sl:scale_top="30"
-                sl:scale_left="155"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
+                sl:scale_top="10"
+                sl:scale_left="147"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
                 android:text="0"
+                android:textColor="#c40e24"
                 android:id="@+id/viewNumber0"
+                android:background="@drawable/circle_border_ordinary"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                sl:scale_top="60"
-                sl:scale_left="220"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
+                sl:scale_top="37"
+                sl:scale_left="230"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
                 android:text="1"
-                android:id="@+id/viewNumber1"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                sl:scale_top="115"
-                sl:scale_left="265"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
-                android:text="2"
-                android:id="@+id/viewNumber2"/>
+                android:id="@+id/viewNumber1"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
 
 
             <Button
@@ -269,95 +277,121 @@
                 android:layout_height="wrap_content"
 
                 sl:scale_top="190"
-                sl:scale_left="265"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
+                sl:scale_left="280"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
                 android:text="3"
-                android:id="@+id/viewNumber3"/>
+                android:id="@+id/viewNumber3"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
 
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                sl:scale_top="245"
-                sl:scale_left="220"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
+                sl:scale_top="260"
+                sl:scale_left="230"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
                 android:text="4"
-                android:id="@+id/viewNumber4"/>
+                android:id="@+id/viewNumber4"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
 
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                sl:scale_top="270"
-                sl:scale_left="155"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
+                sl:scale_top="260"
+                sl:scale_left="64"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
+                android:text="6"
+                android:id="@+id/viewNumber6"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                sl:scale_top="190"
+                sl:scale_left="16"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
+                android:text="7"
+                android:id="@+id/viewNumber7"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                sl:scale_top="105"
+                sl:scale_left="16"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
+                android:text="8"
+                android:id="@+id/viewNumber8"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                sl:scale_top="37"
+                sl:scale_left="64"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
+                android:text="9"
+                android:id="@+id/viewNumber9"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                sl:scale_top="285"
+                sl:scale_left="147"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
                 android:text="5"
+                android:textColor="#c40e24"
                 android:id="@+id/viewNumber5"
+                android:background="@drawable/circle_border_ordinary"
                 />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                sl:scale_top="245"
-                sl:scale_left="90"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
-                android:text="6"
-                android:id="@+id/viewNumber6" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                sl:scale_top="190"
-                sl:scale_left="45"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
-                android:text="7"
-                android:id="@+id/viewNumber7"/>
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                sl:scale_top="115"
-                sl:scale_left="45"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
-                android:text="8"
-                android:id="@+id/viewNumber8"/>
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-
-                sl:scale_top="60"
-                sl:scale_left="90"
-                sl:scale_width="45"
-                sl:scale_height="45"
-                sl:scale_textsize="15"
-                android:text="9"
-                android:id="@+id/viewNumber9"/>
-
-
+                sl:scale_top="105"
+                sl:scale_left="280"
+                sl:scale_width="60"
+                sl:scale_height="60"
+                sl:scale_textsize="30"
+                android:text="2"
+                android:id="@+id/viewNumber2"
+                android:background="@drawable/circle_border_ordinary"
+                android:textColor="#c40e24"/>
 
 
         </com.ssomai.android.scalablelayout.ScalableLayout>
 
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
-</LinearLayout>
+</FrameLayout>

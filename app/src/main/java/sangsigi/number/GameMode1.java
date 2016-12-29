@@ -1,31 +1,19 @@
 package sangsigi.number;
 
-import android.app.ActionBar;
 import android.app.Activity;
-import android.app.Dialog;
-import android.content.Context;
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.app.Fragment;
-import android.os.Handler;
-import android.os.SystemClock;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.ssomai.android.scalablelayout.ScalableLayout;
 
 import java.util.Random;
-
-import static android.os.SystemClock.sleep;
 
 /**
  * Created by nsi on 2016-12-15.
@@ -35,20 +23,27 @@ public class GameMode1 extends Activity {
 
     private CustomDialog mCustomDialog;
     TimerThread timerThread;                //시간재기용 스레드
+    TextView tv_round;
     TextView timer;
-    TextView m_solution;
+    Button btn_help;
+    LinearLayout help_layout;
+    Button view_help;
+
 
     Button[] arrayButton;
     Button[] arrayView;
 
-    int viewNumberId[] = {R.id.viewNumber0,R.id.viewNumber1,R.id.viewNumber2,R.id.viewNumber3,R.id.viewNumber4,R.id.viewNumber5,R.id.viewNumber6
-                            ,R.id.viewNumber7,R.id.viewNumber8,R.id.viewNumber9};
+    int btImageList[] = {R.mipmap.number0,R.mipmap.number1,R.mipmap.number2,R.mipmap.number3,R.mipmap.number4,R.mipmap.number5,R.mipmap.number6,R.mipmap.number7,R.mipmap.number8,R.mipmap.number9};
     static boolean wrongAnswer = false;
     static Button selectViewButton;
+    static int disableIndex ;
 
+
+    int symbolList[] ;
     int dapList[] ;                                 //매 라운드 정답 리스트
     int selectIndexList[];                       //특수문자 표시할 뷰 index 리스트
     int problemList[][];                            //셔플된 문제 리스트
+
     int round = 10;                                     //라운드 수 현재 10
 
     static int level = 0;
@@ -57,24 +52,118 @@ public class GameMode1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamemode1);
+
+        init();
+        gameSet(round);
+        gameContinue();
+
+    }
+    public void init(){
+        ScalableLayout sl = (ScalableLayout) findViewById(R.id.mode1_layout);
+
+        help_layout = new LinearLayout(this);
+        sl.addView(help_layout, 25f, 150f, 350f, 150f);
+        help_layout.setBackgroundColor(Color.argb(230,255,255,255));
+        help_layout.setVisibility(View.GONE);
+
+        view_help = new Button(this);
+        view_help.setBackgroundResource(R.mipmap.help_view);
+
+        help_layout.addView(view_help);
+
+        tv_round = (TextView)findViewById(R.id.frag1_round);
         timer = (TextView) findViewById(R.id.frag1_timer);                                  //시간초
-        m_solution = (TextView) findViewById(R.id.frag1_solution);                           //답칸
+        btn_help = (Button) findViewById(R.id.mode1_help);
+
+        btn_help.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                Button btn_help = (Button)v;
+                int action = event.getAction();
+
+                if(action==MotionEvent.ACTION_DOWN){
+                    help_layout.setVisibility(View.VISIBLE);
+                }
+                else if(action==MotionEvent.ACTION_OUTSIDE){
+
+                    help_layout.setVisibility(View.GONE);
+                }
+                else if(action==MotionEvent.ACTION_UP){
+
+                    help_layout.setVisibility(View.GONE);
+                }
+
+
+                return false;
+            }
+        });
+
         arrayButton = getButtonSource();                                                    // 0 ~ 9 숫자버튼
         arrayView = getViewSource();                                                        // 문제판의 0 ~ 9 view
 
         timerThread = new TimerThread(timer, arrayButton);                    //시간초 스레드 시작
-        gameSet(round);                                                         //라운드 수 대로 답 리스트, 문제 리스트, 뷰 index리스트를 클래스변수로 등록.
-        gameContinue();
 
+    }
+
+    public void gameRestart(){
+
+        gameSet(round);                                                         //라운드 수 대로 답 리스트, 문제 리스트, 뷰 index리스트를 클래스변수로 등록.
+
+        for(int i=0; i<arrayButton.length ;i++){
+            arrayButton[i].setBackgroundResource(btImageList[i]);
+            arrayButton[i].setEnabled(true);
+        }
+        gameContinue();
 
     }
 
     public void gameContinue(){                 //매 라운드 화면 갱신
+
+        tv_round.setText("ROUND "+(level+1));
+
         for(int i=0; i<arrayView.length;i++){
             arrayView[i].setText(problemList[level][i]+"");
+            arrayView[i].setBackgroundResource(R.drawable.circle_border_ordinary);
+
+
         }
 
-        arrayView[selectIndexList[level]].setBackgroundColor(Color.BLUE);
+        switch(symbolList[level]){
+            case -4:
+
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape4r);
+                break;
+            case -3:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape3r);
+                break;
+            case -2:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape2r);
+                break;
+            case -1:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape1r);
+                break;
+            case 5:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shapestar);
+                break;
+            case 1:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape1);
+                break;
+            case 2:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape2);
+                break;
+            case 3:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape3);
+                break;
+            case 4:
+                arrayView[selectIndexList[level]].setBackgroundResource(R.mipmap.shape4);
+                break;
+        }
+
+        disableIndex = Integer.parseInt(arrayView[selectIndexList[level]].getText().toString());
+        arrayButton[disableIndex].setBackgroundResource(R.mipmap.logo_btn);
+        arrayButton[disableIndex].setEnabled(false);
+
     }
 
     public void gameSet(int round){
@@ -122,7 +211,7 @@ public class GameMode1 extends Activity {
         }
         Log.e("gameMode1 4 ? ",m_dap[0]+", "+m_dap[1]+", "+m_dap[2]+", "+m_dap[3]+", "+m_dap[4]+", "+m_dap[5]+", "+m_dap[6]+", "+m_dap[7]+", "+m_dap[8]+", "+m_dap[9]);
 
-
+        symbolList = symbol;
         selectIndexList = problemIndex;                     //특수문자 표시할 뷰 index 리스트
         dapList = m_dap;                                     //매 라운드 정답 리스트
         problemList = m_problemList;                        //셔플된 문제 리스트
@@ -133,6 +222,7 @@ public class GameMode1 extends Activity {
         super.onStart();
 
     }
+
 
     protected void onResume() {
         super.onResume();
@@ -145,12 +235,18 @@ public class GameMode1 extends Activity {
         timerThread.pauseThread();
     }
 
+    protected void onDestroy(){
+        super.onDestroy();
+
+
+        timerThread.stopThread();
+    }
+
 
     public void onClickView(View v) {                   //각 버튼 리스너 (숫자버튼)
         int insertAnswer = -1;
         switch (v.getId()) {
-            case R.id.mode1_end:
-                break;
+
             case R.id.select0:
                 insertAnswer = 0;
                 break;
@@ -200,9 +296,11 @@ public class GameMode1 extends Activity {
         int index = searchWhereView(insertAnswer);
 
         if (dap[level] == Integer.parseInt(arrayView[index].getText().toString())) {
-            Toast.makeText(this, "답입니다.", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "답입니다.", Toast.LENGTH_SHORT).show();
 
-            arrayView[selectIndexList[level]].setBackgroundColor(Color.LTGRAY);
+            arrayButton[disableIndex].setBackgroundResource(btImageList[disableIndex]);
+            arrayButton[disableIndex].setEnabled(true);
+
             level++;           //다음 레벨 이동
 
             if (level >= 10) {
@@ -220,12 +318,10 @@ public class GameMode1 extends Activity {
 
             gameContinue();         //다음 레벨 화면 갱신
         } else {
-            Toast.makeText(this, "틀렸습니다.", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "틀렸습니다.", Toast.LENGTH_SHORT).show();
             selectViewButton = arrayView[index];
             wrongAnswer = true;
-            m_solution.setText("" + insertAnswer);
         }
-
     }
 
     public Button[] getButtonSource() {
@@ -269,9 +365,9 @@ public class GameMode1 extends Activity {
                 MainActivity.coin--;
                 mCustomDialog.hide();
                 timer.setText("0.0");
+                timerThread.stopThread();
                 timerThread = new TimerThread(timer, arrayButton);
-                gameSet(round);
-                gameContinue();
+                gameRestart();
 
             } else {
                 Toast.makeText(getApplicationContext(), "코인 부족", Toast.LENGTH_SHORT).show();

@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:sl="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/mainbg"
     tools:context="sangsigi.number.MainActivity">
 
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/mainScreen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@mipmap/mainbg"
+
 
         sl:scale_base_height="640"
         sl:scale_base_width="400"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
 
         >
 
@@ -39,16 +37,17 @@
             android:id="@+id/coinstate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
+            android:background="#00ffffff"
             android:text="0/0"
             android:textColor="@android:color/black"
             android:gravity="center"
 
-            sl:scale_top="40"
-            sl:scale_left="150"
+            sl:scale_top="580"
+            sl:scale_left="270"
             sl:scale_textsize="30"
             sl:scale_width="100"
             sl:scale_height="40"
+
 
             />
 
@@ -59,7 +58,7 @@
             android:layout_height="wrap_content"
 
             android:layout_gravity="center_horizontal"
-            sl:scale_top="330"
+            sl:scale_top="350"
             sl:scale_height="80"
             sl:scale_width="200"
             sl:scale_textsize="50"
@@ -73,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            sl:scale_top="440"
+            sl:scale_top="460"
             sl:scale_height="80"
             sl:scale_width="200"
             sl:scale_textsize="50"
@@ -95,4 +94,4 @@
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
 
-</RelativeLayout>
+</FrameLayout>
