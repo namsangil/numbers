@@ -1,11 +1,16 @@
 package sangsigi.number;
 
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.AnimationSet;
+import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -28,6 +33,7 @@ public class GameMode1 extends Activity {
     Button btn_help;
     LinearLayout help_layout;
     Button view_help;
+    ScalableLayout game_circle;
 
 
     Button[] arrayButton;
@@ -59,8 +65,9 @@ public class GameMode1 extends Activity {
 
     }
     public void init(){
-        ScalableLayout sl = (ScalableLayout) findViewById(R.id.mode1_layout);
 
+        ScalableLayout sl = (ScalableLayout) findViewById(R.id.mode1_layout);
+        game_circle = (ScalableLayout) findViewById(R.id.game_circle);
         help_layout = new LinearLayout(this);
         sl.addView(help_layout, 25f, 150f, 350f, 150f);
         help_layout.setBackgroundColor(Color.argb(230,255,255,255));
@@ -292,6 +299,17 @@ public class GameMode1 extends Activity {
         return i;
     }
 
+    public void animationStart(View v){
+
+
+        AnimationSet set = new AnimationSet(true);
+        set.setInterpolator(new AccelerateInterpolator());
+        RotateAnimation anim = new RotateAnimation(0, 1800, RotateAnimation.RELATIVE_TO_SELF, 0.5f, RotateAnimation.RELATIVE_TO_SELF, 0.5f);
+        anim.setDuration(300);
+
+        ( (ScalableLayout)v).startAnimation(anim);
+    }
+
     public void checkAnswer(int[] dap, int insertAnswer) {
         int index = searchWhereView(insertAnswer);
 
@@ -300,6 +318,9 @@ public class GameMode1 extends Activity {
 
             arrayButton[disableIndex].setBackgroundResource(btImageList[disableIndex]);
             arrayButton[disableIndex].setEnabled(true);
+
+
+
 
             level++;           //다음 레벨 이동
 
@@ -314,6 +335,10 @@ public class GameMode1 extends Activity {
                 mCustomDialog.show();
                 level = 0;
 
+            }
+            else{
+
+                animationStart(game_circle);
             }
 
             gameContinue();         //다음 레벨 화면 갱신

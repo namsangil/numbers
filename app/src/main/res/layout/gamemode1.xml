@@ -43,9 +43,9 @@
             android:textColor="@android:color/black"
             android:gravity="center"
             sl:scale_top="25"
-            sl:scale_left="270"
+            sl:scale_left="250"
             sl:scale_textsize="40"
-            sl:scale_width="100"
+            sl:scale_width="120"
             sl:scale_height="50" />
 
         <Button
@@ -217,6 +217,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+            android:id="@+id/game_circle"
+
 
             sl:scale_top="100"
             sl:scale_left="25"
@@ -225,15 +227,15 @@
             sl:scale_base_height= "354"
             sl:scale_base_width= "354"
 
-            android:background="#33ffffff"
+            android:background="@drawable/mode1_main_circle"
             >
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
 
-                sl:scale_width="230"
-                sl:scale_height="230"
+                sl:scale_width="260"
+                sl:scale_height="260"
                 android:layout_gravity="center"
                 android:background="@mipmap/defense6"
                 >
