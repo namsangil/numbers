@@ -41,7 +41,8 @@
             android:gravity="center"
             android:textColor="#ffffff"
 
-            sl:scale_top="0"
+
+            sl:scale_top="25"
             sl:scale_left="0"
             sl:scale_textsize="18"
             sl:scale_width="150"
@@ -55,6 +56,7 @@
             android:text="content"
             android:gravity="center"
             android:textColor="#ffffff"
+            android:visibility="gone"
             sl:scale_top="23"
             sl:scale_left="0"
             sl:scale_textsize="10"

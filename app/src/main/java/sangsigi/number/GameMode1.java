@@ -334,7 +334,7 @@ public class GameMode1 extends Activity {
                 Log.e("타이머", "" + timerThread.stopThread());           //시간종료
                 mCustomDialog = new CustomDialog(this,
                         timerThread.stopThread() + " sec",
-                        "다시 하시겠습니까?",
+                        "",
                         leftClickListener,
                         rightClickListener);
                 mCustomDialog.show();

@@ -11,54 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a01e887-ad56-429b-91c5-0a008a701a16" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_ads_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_analytics_impl_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_common_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/firebase_iid_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_ads_lite_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_base_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_basement_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_clearcut_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_gass_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/play_services_tasks_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/result_dialog.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/Defense.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/defense.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/Defense2.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/defense2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/Defense3.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/defense3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/Defense4.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/defense4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/Defense5.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/defense5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/shapeStar.png" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/shapestar.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_scalablelayout_2_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_scalablelayout_2_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_core_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/espresso_idling_resource_2_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/exposed_instrumentation_api_publish_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/rules_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/runner_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_compat_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_compat_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_ui_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_ui_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_core_utils_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_core_utils_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_fragment_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_fragment_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_media_compat_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_media_compat_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_24_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomDialog.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build/android-profile/profile-2017-06-08-23-26-14-731.rawproto" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java" afterPath="$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/sangsigi/number/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/sangsigi/number/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/gamemode1.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/gamemode1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
     </list>
     <ignored path="number.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -144,11 +106,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameMode1.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameMode1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="340" column="26" selection-start-line="340" selection-start-column="26" selection-end-line="340" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -169,8 +131,8 @@
       <file leaf-file-name="CustomDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+            <state relative-caret-position="576">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,14 +140,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom_dialog.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="custom_dialog.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="105" column="45" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="45" />
+            <state relative-caret-position="279">
+              <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
               <folding>
                 <element signature="e#702#740#0" expanded="true" />
-                <element signature="e#4164#4205#0" expanded="true" />
+                <element signature="e#4204#4245#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -197,8 +159,8 @@
       <file leaf-file-name="result_dialog.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/result_dialog.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="144">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -238,8 +200,8 @@
       <file leaf-file-name="strings.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            <state relative-caret-position="216">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -2310,13 +2272,13 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/result_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/gamemode1.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomResultDialog.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/sangsigi/number/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml" />
       </list>
     </option>
   </component>
@@ -2844,7 +2806,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -2945,34 +2907,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/result_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/gamemode1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="0" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#684#723#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="105" column="45" selection-start-line="105" selection-start-column="37" selection-end-line="105" selection-end-column="45" />
-          <folding>
-            <element signature="e#702#740#0" expanded="true" />
-            <element signature="e#4164#4205#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -3025,9 +2965,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        <state relative-caret-position="216">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/result_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3041,24 +2999,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sangsigi/number/CustomDialog.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        <state relative-caret-position="280">
+          <caret line="340" column="26" selection-start-line="340" selection-start-column="26" selection-end-line="340" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/sangsigi/number/GameMode1.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/custom_dialog.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        <state relative-caret-position="279">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#702#740#0" expanded="true" />
+            <element signature="e#4204#4245#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
   </component>
