@@ -12,6 +12,9 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class CustomDialog extends Dialog {
 
     @Override
@@ -26,6 +29,11 @@ public class CustomDialog extends Dialog {
         setContentView(R.layout.custom_dialog);
 
         setLayout();
+        adRequest4 = new AdRequest.Builder().build();
+        adRequest5 = new AdRequest.Builder().build();
+        mAdView4.loadAd(adRequest4);
+
+        mAdView5.loadAd(adRequest5);
         setTitle(mTitle);
         setContent(mContent);
         setClickListener(mLeftClickListener, mRightClickListener);
@@ -55,6 +63,7 @@ public class CustomDialog extends Dialog {
         this.mContent = content;
         this.mLeftClickListener = leftListener;
         this.mRightClickListener = rightListener;
+
     }
 
     private void setTitle(String title) {
@@ -82,9 +91,15 @@ public class CustomDialog extends Dialog {
     private Button mSecondButton;
     private String mTitle;
     private String mContent;
+    private AdView mAdView4;
+    private AdView mAdView5;
+    private AdRequest adRequest4;
+    private AdRequest adRequest5;
+
 
     private View.OnClickListener mLeftClickListener;
     private View.OnClickListener mRightClickListener;
+
 
     /*
      * Layout
@@ -94,6 +109,9 @@ public class CustomDialog extends Dialog {
         mContentView = (TextView) findViewById(R.id.content);
         mFirstButton = (Button) findViewById(R.id.restart);
         mSecondButton = (Button) findViewById(R.id.mainmenu);
+
+         mAdView4 = (AdView) findViewById(R.id.adView4);
+         mAdView5 = (AdView) findViewById(R.id.adView5);
     }
 
 }

@@ -1,22 +1,21 @@
 package sangsigi.number;
 
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 
 public class MainActivity extends AppCompatActivity {
     static int coin = 3;
-    TextView coinState;
+//    TextView coinState;
     Button mode1;
-    Button mode2;
+//    Button mode2;
 
     private BackPressCloseHandler backPressCloseHandler;
 
@@ -25,61 +24,71 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        AdView mAdView1 = (AdView) findViewById(R.id.adView1);
+        AdView mAdView2 = (AdView) findViewById(R.id.adView2);
+        AdRequest adRequest1 = new AdRequest.Builder().build();
+        AdRequest adRequest2 = new AdRequest.Builder().build();
+        mAdView1.loadAd(adRequest1);
+        mAdView2.loadAd(adRequest2);
+
+
 
         SharedPreferences prefs = getSharedPreferences("PrefName", MODE_PRIVATE);
         coin = Integer.parseInt(prefs.getString("coin", "3"));
 
         backPressCloseHandler = new BackPressCloseHandler(this);
 
-        coinState = (TextView) findViewById(R.id.coinstate);
+//        coinState = (TextView) findViewById(R.id.coinstate);
         mode1 = (Button) findViewById(R.id.mode1start);
-        mode2 = (Button) findViewById(R.id.mode2start);
+//        mode2 = (Button) findViewById(R.id.mode2start);
 
-        coinState.setOnClickListener(new View.OnClickListener() {           //임시로 충전버튼만듬
-            @Override
-            public void onClick(View v) {
-                coin = 3;
-                ((TextView)v).setText(coin+"/3");
-            }
-        });
+//        coinState.setOnClickListener(new View.OnClickListener() {           //임시로 충전버튼만듬
+//            @Override
+//            public void onClick(View v) {
+//                coin = 3;
+//                ((TextView)v).setText(coin+"/3");
+//            }
+//        });
 
         mode1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (coin != 0) {
-                    coin--;
-                    Intent i = new Intent(MainActivity.this, GameMode1.class);
+                Intent i = new Intent(MainActivity.this, GameMode1.class);
                     startActivity(i);
-                }
-                else{
-                    Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
-                }
+//
+//                if (coin != 0) {
+//                    coin--;
+//                    Intent i = new Intent(MainActivity.this, GameMode1.class);
+//                    startActivity(i);
+//                }
+//                else{
+//                    Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
+//                }
             }
         });
 
-        mode2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                if (coin != 0) {
-                    coin--;
-                    Intent i = new Intent(MainActivity.this, GameMode2.class);
-                    startActivity(i);
-
-                }
-                else{
-                    Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
+//        mode2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//
+//                if (coin != 0) {
+//                    coin--;
+//                    Intent i = new Intent(MainActivity.this, GameMode2.class);
+//                    startActivity(i);
+//
+//                }
+//                else{
+//                    Toast.makeText(getApplicationContext(),"코인 부족",Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//        });
 
     }
 
     protected void onStart() {
         super.onStart();
-        coinState.setText(coin+"/3");
+//        coinState.setText(coin+"/3");
     }
 
     public void onBackPressed() {

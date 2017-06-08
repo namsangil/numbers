@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/21e7b021e06c2ffaace3caf05e2bfa303ee1145f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_63666a6ed2cfa6ef6bafcb9c94bc25ae90ec8217/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/a1be73a91060219bad18bb7cfc2a83608fc20074/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c806ee6543b45f274fda47c96e9a1a8b568c94b6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/f7be6bb7e7a609398d0d3a5ffda1e6a7d1a00699/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7f325aea78871ba07e5d22fec98b85c33f8794c6">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_70eb20f4b71fc2de65d469353b92b7a804b321d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/dev/number/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9f7b7cdbd562228d85fc34d817393bdda1e7a11e">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_944be43fd32843a2a3f9242069d75f46c36c609e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_ce43f98b450a7b5d147428ace6f91bd5d66f428a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/82a228f2539e114b0a80b6790b1c5be9bd7982d3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ce6f3d6d23aa2d45f1ee68c5fce3e73e7912f0b9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/07f11aa78c83640fafe3cee97326d19fbf52ad2c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2298a305529aa8702d51057e8a73fdfeede91442/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/a48b5171b06cf8cdff60f8973bf60a4ef643bb60/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6e4870c7558e74ea9acbc6ac8d214b99e27e09a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/dev/number/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_31474be363a3f3a88ff1eab69f78364c86206d75/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/87452c6731a6a5271612765a14f5f01a23b1e120/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fef1d820029833b71b39cde1fb18fac328460ca4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/dee5f9f3ee9c90eabf3a595e7fa40ec22940c099/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a6f8d72721f691db7d3d27a5b50f08e7ac4b53f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/6ec63bcc4c6e7c1d03ff31bfa2d851fde87c2f73/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_dffe2c600c65f090588ba91e5c1c284fdc032a77/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/aa2f1aa91e41f57434f346d3f8ea0c063b491ce0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_46aa7578f3103b319013192cebf8f56886b27712/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/07537ec7bf1649b98ef399d88715ce396c32d131/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ad7a818ab2eb4ce338c88820029f9db07f2a8011/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/34ba5b2a769be87260e70a912a22e2453a88dd0e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_37fabc6fc626bf23d10b0b589e821a5dad73143f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/a890f1cd654f51591ef82fa71d58fbb39514d262/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_afa0b859e77495f61d4ddd3b12f9c1d4425345b1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/a890f1cd654f51591ef82fa71d58fbb39514d262/output/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_37fc7e33972ce39fe29e1dbf40781db432363080/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/dee5f9f3ee9c90eabf3a595e7fa40ec22940c099/output/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_a2128ec0afaa48629aecec3b7b04ae2f67da58fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/87452c6731a6a5271612765a14f5f01a23b1e120/output/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c9189fe608a6cc419f97e732a18411fd70f003e2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/80dad278a1b1d2d05eb966805113cc30a23c17c3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fabc4baa9fa57e3cf47381e083a0cc43ad0bc099/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/3b150ed09128b35191fad9ca39848d28bd7da99f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6f8048e3bac2b05d7c9a61f2021ddd4b20445db9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/3b150ed09128b35191fad9ca39848d28bd7da99f/output/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_9985630e9679758f5ab8b7133a72a4dee5c31aa4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/72b5b752eb32dbb5a97501c802e9701cbf2dea97/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_400123c1f7e4237e8aee4e8e619ce1947684da08/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/21e7b021e06c2ffaace3caf05e2bfa303ee1145f/output/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_601a57ae49ddea9db23bcfa9476645d6c667fda5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/ee7b4a434eac7341c981a29f17510335df2250e9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fd156e3b1ede64874cce9a1c1b04f8e94eb86abe/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/5be4e6259ede81545079aa1872ad153289f4cc06/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b34942dccb86cd73cc5e74c7ddc53c99fd3929d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/7537ca63a42b588b7fa1f64d9d94fb0ef2384e6e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4e5def29dc9ea2dd12e43efc7bfba64e9aeef4ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/56e408278954ffd12236f6c26fdd1c326099fcd3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b55f5f14d57747544c874c3d52e99fb23c883a7c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/nam/.android/build-cache/d5f238204aaf724312532b2b62cfb3b7530371fd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="/Users/nam/dev/number/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_afc0e49480a51164b0eb7b1fe8d00db1eab08c6d/classes.dex" />
+    </item>
+
+</items>

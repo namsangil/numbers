@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:sl="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@mipmap/number0"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+
     >
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_result_top">
+    </com.google.android.gms.ads.AdView>
 
 
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:layout_margin="20dp"
-        android:background="#00ffffff"
+        android:background="@drawable/result_dialog"
 
         sl:scale_base_height="130"
         sl:scale_base_width="150">
@@ -27,7 +39,8 @@
             android:background="#00ffffff"
             android:text="Title"
             android:gravity="center"
-            android:textColor="#000000"
+            android:textColor="#ffffff"
+
             sl:scale_top="0"
             sl:scale_left="0"
             sl:scale_textsize="18"
@@ -41,7 +54,7 @@
             android:background="#00ffffff"
             android:text="content"
             android:gravity="center"
-            android:textColor="#ff000000"
+            android:textColor="#ffffff"
             sl:scale_top="23"
             sl:scale_left="0"
             sl:scale_textsize="10"
@@ -113,4 +126,14 @@
 
     </com.ssomai.android.scalablelayout.ScalableLayout>
 
-</RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_result_bottom">
+    </com.google.android.gms.ads.AdView>
+
+
+</FrameLayout>

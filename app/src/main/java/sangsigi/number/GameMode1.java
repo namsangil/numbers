@@ -1,6 +1,5 @@
 package sangsigi.number;
 
-import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,14 +7,14 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.ssomai.android.scalablelayout.ScalableLayout;
 
 import java.util.Random;
@@ -58,6 +57,12 @@ public class GameMode1 extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gamemode1);
+
+        AdView mAdView3 = (AdView) findViewById(R.id.adView3);
+        AdRequest adRequest3 = new AdRequest.Builder().build();
+        mAdView3.loadAd(adRequest3);
+
+
 
         init();
         gameSet(round);
@@ -385,7 +390,7 @@ public class GameMode1 extends Activity {
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-            if (MainActivity.coin != 0) {
+//            if (MainActivity.coin != 0) {
                 //재시작
                 MainActivity.coin--;
                 mCustomDialog.hide();
@@ -394,9 +399,9 @@ public class GameMode1 extends Activity {
                 timerThread = new TimerThread(timer, arrayButton);
                 gameRestart();
 
-            } else {
-                Toast.makeText(getApplicationContext(), "코인 부족", Toast.LENGTH_SHORT).show();
-            }
+//            } else {
+//                Toast.makeText(getApplicationContext(), "코인 부족", Toast.LENGTH_SHORT).show();
+//            }
         }
     };
 

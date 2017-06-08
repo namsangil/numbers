@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Number</string>
+    <string name="app_name">Shape Number</string>
+
+    <string name="banner_ad_unit_id_main_top">ca-app-pub-8015461707013022/9833451794</string>
+    <string name="banner_ad_unit_id_main_bottom">ca-app-pub-8015461707013022/9414649392</string>
+    <string name="banner_ad_unit_id_game1_top">ca-app-pub-8015461707013022/7658714592</string>
+    <string name="banner_ad_unit_id_result_top">ca-app-pub-8015461707013022/9135447794</string>
+    <string name="banner_ad_unit_id_result_bottom">ca-app-pub-8015461707013022/3088914195</string>
+
 </resources>
