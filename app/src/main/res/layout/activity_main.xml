@@ -8,15 +8,6 @@
     android:background="@mipmap/mainbg"
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     tools:context="sangsigi.number.MainActivity">
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id_game1_top">
-    </com.google.android.gms.ads.AdView>
-
 
     <com.ssomai.android.scalablelayout.ScalableLayout
         android:id="@+id/mainScreen"
@@ -45,23 +36,36 @@
 
 
             />
-        <!--<TextView-->
-            <!--android:id="@+id/coinstate"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:background="#00ffffff"-->
-            <!--android:text="0/0"-->
-            <!--android:textColor="@android:color/black"-->
-            <!--android:gravity="center"-->
+        <TextView
+            android:id="@+id/coinstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:text="0/0"
+            android:textColor="@android:color/black"
+            android:gravity="center"
 
-            <!--sl:scale_top="290"-->
-            <!--sl:scale_left="150"-->
-            <!--sl:scale_textsize="30"-->
-            <!--sl:scale_width="100"-->
-            <!--sl:scale_height="40"-->
+            sl:scale_top="290"
+            sl:scale_left="100"
+            sl:scale_textsize="30"
+            sl:scale_width="100"
+            sl:scale_height="40"
 
 
-            <!--/>-->
+            />
+
+        <Button
+            android:id="@+id/charge_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            sl:scale_top="290"
+            sl:scale_left="200"
+            sl:scale_textsize="20"
+            sl:scale_width="100"
+            sl:scale_height="40"
+            android:background="@drawable/result_dialog"
+            android:text="충전"
+            />
 
 
         <Button
@@ -99,6 +103,15 @@
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id_main_bottom">
     </com.google.android.gms.ads.AdView>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_main_top">
+    </com.google.android.gms.ads.AdView>
+
 
 
 </FrameLayout>

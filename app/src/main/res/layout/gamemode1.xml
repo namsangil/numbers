@@ -10,16 +10,6 @@
 
     >
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|top"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id_main_bottom">
-    </com.google.android.gms.ads.AdView>
-
-
 
     <com.ssomai.android.scalablelayout.ScalableLayout
             android:id="@+id/mode1_layout"
@@ -410,5 +400,15 @@
             </com.ssomai.android.scalablelayout.ScalableLayout>
 
         </com.ssomai.android.scalablelayout.ScalableLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id_game1_top">
+    </com.google.android.gms.ads.AdView>
+
 
 </FrameLayout>

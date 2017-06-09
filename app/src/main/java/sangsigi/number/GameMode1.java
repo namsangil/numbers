@@ -12,6 +12,7 @@ import android.view.animation.RotateAnimation;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -390,7 +391,7 @@ public class GameMode1 extends Activity {
     private View.OnClickListener leftClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-//            if (MainActivity.coin != 0) {
+            if (MainActivity.coin != 0) {
                 //재시작
                 MainActivity.coin--;
                 mCustomDialog.hide();
@@ -399,9 +400,9 @@ public class GameMode1 extends Activity {
                 timerThread = new TimerThread(timer, arrayButton);
                 gameRestart();
 
-//            } else {
-//                Toast.makeText(getApplicationContext(), "코인 부족", Toast.LENGTH_SHORT).show();
-//            }
+            } else {
+                Toast.makeText(getApplicationContext(), "코인 부족", Toast.LENGTH_SHORT).show();
+            }
         }
     };
 
