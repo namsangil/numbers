@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         rewardAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
             @Override
             public void onRewardedVideoAdLoaded() {
+                Log.d("namsang","onRewardedVideoAdLoaded ");
 
             }
 
@@ -54,13 +55,13 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onRewardedVideoAdClosed() {
-                coin = 3;
-                coinState.setText(coin+"/3");
             }
 
             @Override
             public void onRewarded(RewardItem rewardItem) {
 
+                coin = 3;
+                coinState.setText(coin+"/3");
             }
 
             @Override
@@ -134,6 +135,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(rewardAd.isLoaded()){
                     rewardAd.show();
+                }
+                else{
+                    coin = 3;
+                    coinState.setText(coin+"/3");
                 }
                 if(isFail){
 
